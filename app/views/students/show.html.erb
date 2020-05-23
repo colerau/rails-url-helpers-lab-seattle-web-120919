@@ -1,1 +1,8 @@
 <h1><%= @student.to_s %></h1>
+<% if @student.active %> 
+<%= puts "hello" %> 
+This student is currently active. 
+<% elsif !@student.active %> 
+<%= puts "world" %> 
+This student is currently inactive. 
+<% end %> 
